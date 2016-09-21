@@ -58,4 +58,5 @@ popUpView.popUpViewArrow = PopUpViewArrowLeft; // Arrow to Left
 
 popUpView.popUpViewArrow = PopUpViewArrowRight; // Arrow to Right
 
+popUpView.popUpViewArrow = PopUpViewArrowNone; // None arrow will appear
 ```
