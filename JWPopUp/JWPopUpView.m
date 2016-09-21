@@ -175,12 +175,20 @@
     CGFloat heightTriangle, widthTriangle, xTriangle, yTriangle;
     CGFloat xRoundedView, yRoundedView, widthRoundedView, heightRoundedView;
     
-    if ( self.popUpViewArrow == JWPopUpViewArrowTop ) {
+    if ( self.popUpViewArrow == JWPopUpViewArrowTop || self.popUpViewArrow == JWPopUpViewArrowTopLeft || self.popUpViewArrow == JWPopUpViewArrowTopCenter || self.popUpViewArrow == JWPopUpViewArrowTopRight ) {
         
         heightTriangle = 10;
         widthTriangle = 20;
-        xTriangle = x + width - ( widthTriangle * 1.5 );
+        
         yTriangle = y;
+        
+        if ( self.popUpViewArrow == JWPopUpViewArrowTop || self.popUpViewArrow == JWPopUpViewArrowTopRight ) {
+            xTriangle = x + width - ( widthTriangle * 1.5 );
+        } else if ( self.popUpViewArrow == JWPopUpViewArrowTopLeft ) {
+            xTriangle = x + ( widthTriangle * 1.5 );
+        } else if ( self.popUpViewArrow == JWPopUpViewArrowTopCenter ) {
+            xTriangle = x + ( width/2 ) - (widthTriangle/2);
+        }
         
         xRoundedView = x;
         yRoundedView = y + heightTriangle;

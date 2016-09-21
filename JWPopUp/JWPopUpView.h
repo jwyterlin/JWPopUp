@@ -13,6 +13,9 @@
  * @brief A list of pop up view arrow directions.
  * @constant JWPopUpViewArrowNone None arrow will appear.
  * @constant JWPopUpViewArrowTop The arrow will appear on top of the view.
+ * @constant JWPopUpViewArrowTopLeft The arrow will appear on top and left of the view.
+ * @constant JWPopUpViewArrowTopCenter The arrow will appear on top and center of the view.
+ * @constant JWPopUpViewArrowTopRight The arrow will appear on top and right of the view.
  * @constant JWPopUpViewArrowBottom The arrow will appear at the bottom of the view.
  * @constant JWPopUpViewArrowLeft The arrow will appear at the left of the view.
  * @constant JWPopUpViewArrowRight The arrow will appear at the right of the view.
@@ -20,6 +23,9 @@
 typedef NS_ENUM(NSInteger, JWPopUpViewArrow) {
     JWPopUpViewArrowNone,
     JWPopUpViewArrowTop,
+    JWPopUpViewArrowTopLeft,
+    JWPopUpViewArrowTopCenter,
+    JWPopUpViewArrowTopRight,
     JWPopUpViewArrowBottom,
     JWPopUpViewArrowLeft,
     JWPopUpViewArrowRight
